@@ -1,0 +1,38 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='/css/bootstrap4.css')
+    link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    script(src='/js/jquery.js')
+    script(src='/js/bootstrap4.js')
+    
+  body
+    header
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        a.navbar-brand(href='#')
+          h4 title
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Home 
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Dropdown
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                .dropdown-divider
+                a.dropdown-item(href='#') Something else here
+            li.nav-item
+              a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          div.form-inline.my-2.my-lg-0
+            a(href="http://localhost:8000/auth/facebook")
+              span Facebook
